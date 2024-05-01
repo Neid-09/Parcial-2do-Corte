@@ -3,25 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    height: 100vh;
+}
 .contenido {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     background-color: #F2F9FF;
     color: #111729;
+    height: 100%;
 }
 
 .conteiner {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 30px auto;
     margin: 2%;
-    gap: 5%;
+    gap: 10%;
 }
 
 .columnas:first-child {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .links-t {
@@ -45,6 +49,7 @@
     border: 1px solid #111729;
     background-color: #111729;
     border-radius: 15px;
+    max-width: 50px;
 }
 
 .sun {
@@ -68,8 +73,9 @@
 .items:first-child {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 5%;
 }
+
 
 .lista-v {
     display: flex;
@@ -101,6 +107,7 @@
 
 .lista-1 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
